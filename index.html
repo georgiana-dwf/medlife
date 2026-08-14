@@ -33,7 +33,7 @@
       --font: "Avenir Next", Avenir, "Segoe UI", Arial, sans-serif;
       color-scheme: light;
     }
-
+ 
     * { box-sizing: border-box; }
     html { scroll-behavior: smooth; }
     body {
@@ -69,7 +69,7 @@
     .muted { color: var(--muted); }
     .lead { max-width: 64ch; color: var(--muted); font-size: clamp(1.06rem, 2vw, 1.25rem); line-height: 1.55; }
     .stack { display: grid; gap: 16px; }
-
+ 
     .site-header {
       position: sticky; top: 0; z-index: 50;
       background: rgba(255,255,255,.97); border-bottom: 1px solid var(--line);
@@ -95,7 +95,7 @@
       background: var(--cyan); color: white; font-size: 11px; font-weight: 800;
     }
     .menu-button { display: none; }
-
+ 
     .mobile-drawer {
       position: fixed; inset: 0; z-index: 70; display: none; background: rgba(4, 21, 45, .46);
     }
@@ -115,7 +115,7 @@
     .drawer-nav button:hover { background: #f3f7fa; color: var(--blue); }
     .drawer-group { margin-top: 32px; }
     .drawer-group a { display: block; min-height: 44px; padding-block: 10px; color: var(--muted); }
-
+ 
     .btn {
       min-height: 50px; display: inline-flex; align-items: center; justify-content: center; gap: 9px;
       padding: 12px 20px; border: 1px solid transparent; border-radius: 12px;
@@ -134,7 +134,7 @@
     .btn[disabled] { background: #d8e0e7; color: #677686; box-shadow: none; cursor: not-allowed; transform: none; }
     .btn-block { width: 100%; }
     .button-row { display: flex; flex-wrap: wrap; gap: 12px; }
-
+ 
     .hero { background: var(--cyan-soft); }
     .hero-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(440px, .9fr); min-height: 420px; }
     .hero-copy { align-self: center; padding: 48px max(34px, 5vw) 48px max(20px, calc((100vw - 1180px) / 2)); }
@@ -145,7 +145,7 @@
     .hero-placeholder { height: 100%; min-height: 560px; display: grid; place-items: center; padding: 32px; background: linear-gradient(145deg,#d7e4ec,#edf3f7); }
     .hero-placeholder-inner { width: min(360px,80%); aspect-ratio: 4/3; display:grid; place-items:center; gap:12px; align-content:center; border:1px solid #a9bdcc; border-radius:16px; background:rgba(255,255,255,.48); color:#3c566c; text-align:center; }
     .hero-placeholder-inner svg { width:40px; color:var(--blue); }
-
+ 
     .choice-band { background: var(--navy); color: white; }
     .choice-grid { display: grid; grid-template-columns: 1.05fr 1fr 1fr 1fr; }
     .choice-intro, .choice-item { padding: 34px 30px; }
@@ -153,7 +153,7 @@
     .choice-band h2, .choice-band h3 { color: white; }
     .choice-band h2 { margin: 0; font-size: 1.8rem; }
     .choice-item p { margin: 0; color: #d9e7f4; }
-
+ 
     .audience-paths { padding: 48px 0; background: var(--surface); }
     .audience-paths-head { max-width: 700px; margin-bottom: 28px; }
     .audience-paths-head h2 { margin-bottom: 10px; }
@@ -170,7 +170,7 @@
     .audience-path-icon svg { width: 28px; }
     .audience-path h3 { margin: 0 0 6px; }
     .audience-path p { margin: 0; color: var(--muted); }
-
+ 
     .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 34px; }
     .section-head h2 { max-width: 18ch; margin-bottom: 0; }
     .section-head p { max-width: 54ch; margin-bottom: 3px; }
@@ -192,7 +192,7 @@
     .category-row p { margin: 0; color: var(--muted); }
     .row-arrow { color: var(--blue); transition:transform .18s ease; }
     .row-arrow svg { width: 24px; }
-
+ 
     .featured { background: var(--canvas); }
     .home-carousel { padding:48px 0; overflow:hidden; }
     .home-carousel.consumer { background:white; }
@@ -246,7 +246,7 @@
     .card-benefits li { display:grid; grid-template-columns:96px 1fr; gap:12px; padding:8px 0; border-bottom:1px solid var(--line); font-size:.9rem; line-height:1.35; }
     .benefit-label { color:var(--muted); font-weight:600; }
     .benefit-value { color:var(--navy-2); font-weight:650; }
-
+ 
     .trust-strip { background:var(--navy); color:white; }
     .trust-list { display:grid; grid-template-columns:repeat(4,1fr); margin:0; padding:18px 0; list-style:none; }
     .trust-list li { min-height:44px; display:flex; align-items:center; justify-content:center; gap:8px; padding:6px 18px; border-left:1px solid rgba(255,255,255,.2); text-align:center; font-weight:700; }
@@ -259,7 +259,7 @@
     .reason h3 { font-size:1.08rem; }
     .reason p { margin:0; color:var(--muted); }
     .faq-list { max-width:840px; margin:auto; }
-
+ 
     .how-it-works { background:var(--navy); color:white; }
     .how-grid { display:grid; grid-template-columns:auto repeat(3,1fr); align-items:center; gap:0; }
     .how-grid h2 { margin:0 34px 0 0; color:white; font-size:1.45rem; }
@@ -274,7 +274,7 @@
     .plan-questions { display:flex; flex-wrap:wrap; gap:8px; }
     .plan-questions button { min-height:44px; padding:9px 14px; border:1px solid var(--line); border-radius:999px; background:white; color:var(--navy); font-weight:700; cursor:pointer; }
     .plan-questions button[aria-pressed="true"] { border-color:var(--blue); background:#eaf5fb; color:var(--blue); }
-
+ 
     .product-audience { margin:-4px 0 16px; color:var(--blue); font-weight:800; }
     .pdp-highlights { display:grid; grid-template-columns:repeat(3,1fr); gap:10px; margin:20px 0; }
     .pdp-highlight { display:grid; grid-template-columns:34px 1fr; align-items:center; gap:10px; padding:12px; border:1px solid #d5e5ef; border-radius:12px; background:#f8fcfe; color:#263f5e; font-size:.9rem; line-height:1.35; font-weight:600; }
@@ -306,20 +306,20 @@
     .pdp-faq summary span { width:28px; height:28px; display:grid; place-items:center; flex:0 0 auto; border-radius:50%; background:white; color:var(--blue); font-size:1.25rem; font-weight:500; transition:transform .18s ease, background-color .18s ease; }
     .pdp-faq details[open] summary span { transform:rotate(45deg); background:var(--cyan-soft); }
     .pdp-faq details p { margin:-4px 44px 20px 0; color:#455b72; line-height:1.6; }
-
+ 
     .company-banner { background: var(--navy); color: white; }
     .company-banner .container { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 40px; }
     .company-banner h2 { max-width: 22ch; color: white; }
     .company-banner p { max-width: 66ch; margin: 0; color: #d9e7f4; }
     .company-banner .btn { background: white; color: var(--navy); }
-
+ 
     .breadcrumbs { padding-block: 22px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
     .breadcrumbs::-webkit-scrollbar { display: none; }
     .breadcrumbs ol { display: flex; align-items: center; gap: 8px; margin: 0; padding: 0; list-style: none; }
     .breadcrumbs li { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); }
     .breadcrumbs a, .breadcrumbs button { min-height: 44px; display: inline-flex; align-items: center; border: 0; background: none; color: var(--blue); cursor: pointer; }
     .breadcrumbs svg { width: 15px; height: 15px; }
-
+ 
     .category-hero { padding: 32px 0; border-bottom: 1px solid var(--line); background:#f7fbfd; }
     .category-hero h1 { max-width: 18ch; font-size: clamp(2.3rem, 5vw, 4rem); }
     .category-hero .lead { max-width:70ch; margin-bottom: 0; }
@@ -338,7 +338,7 @@
     .catalog-page { padding-top: 32px; background:#f8fafc; }
     .catalog-page .product-grid { padding-bottom: 72px; }
     .empty-state { padding: 48px; border-radius: var(--radius); background: var(--canvas); text-align: center; }
-
+ 
     .pdp-layout { display: grid; grid-template-columns: minmax(0, .96fr) minmax(390px, .82fr); gap: clamp(44px, 7vw, 90px); padding: 18px 0 70px; }
     .pdp-gallery { align-self: start; }
     .pdp-art {
@@ -411,7 +411,7 @@
     details p { max-width: 70ch; color: var(--muted); }
     details a { display: inline-flex; min-height: 44px; align-items: center; font-weight: 700; }
     .mobile-buybar { display: none; }
-
+ 
     .cart-page, .checkout-page { background: var(--canvas); }
     .checkout-shell { padding: 34px 0 88px; }
     .checkout-title { max-width: 1180px; margin: 0 auto 30px; }
@@ -481,13 +481,13 @@
     .checkbox label { color: var(--ink); }
     .secure-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 16px; color: var(--muted); font-size: .93rem; }
     .secure-note svg { flex: 0 0 auto; width: 20px; }
-
+ 
     .cart-sheet { position: fixed; inset: 0; z-index: 90; display: none; align-items: end; justify-content: center; padding: 16px; background: rgba(4,21,45,.5); }
     .cart-sheet.open { display: flex; }
     .cart-sheet-panel { width: min(560px, 100%); padding: 28px; border-radius: 16px 16px 0 0; background: white; box-shadow: var(--shadow); }
     .cart-sheet-panel h2 { margin-bottom: 8px; }
     .cart-sheet-actions { display: grid; gap: 10px; margin-top: 24px; }
-
+ 
     .success-page { padding: 86px 0 110px; background: var(--canvas); }
     .success-card { max-width: 720px; margin: auto; padding: clamp(28px, 6vw, 60px); border-radius: 18px; background: white; box-shadow: var(--shadow); }
     .success-icon { width: 62px; height: 62px; display: grid; place-items: center; margin-bottom: 28px; border-radius: 50%; background: var(--success-soft); color: var(--success); }
@@ -496,7 +496,7 @@
     .success-card .lead { margin-bottom: 30px; }
     .reference { margin: 25px 0; padding: 16px; border-radius: 12px; background: var(--canvas); }
     .reference strong { display: block; font-size: 1.2rem; }
-
+ 
     .search-layer { position: fixed; inset: 0; z-index: 80; display: none; padding: 24px; background: rgba(4, 21, 45, .54); }
     .search-layer.open { display: block; }
     .search-dialog { max-width: 720px; max-height: calc(100vh - 48px); margin: 5vh auto 0; overflow: auto; padding: 24px; border-radius: 16px; background: white; box-shadow: var(--shadow); }
@@ -508,14 +508,14 @@
     .search-result strong, .search-result span { display: block; }
     .search-result span { color: var(--muted); }
     .toast { position: fixed; z-index: 100; right: 22px; bottom: 22px; max-width: 380px; padding: 16px 20px; border-radius: 12px; background: var(--navy-2); color: white; box-shadow: var(--shadow); }
-
+ 
     .site-footer { padding: 60px 0 28px; background: var(--navy-2); color: #dce9f4; }
     .footer-grid { display: grid; grid-template-columns: 1.3fr repeat(2, 1fr); gap: 50px; }
     .footer-logo { width: 250px; padding: 8px; border-radius: 6px; background: white; }
     .site-footer h3 { color: white; font-size: 1rem; }
     .site-footer a { display: block; min-height: 42px; padding-block: 8px; color: #dce9f4; }
     .footer-bottom { margin-top: 44px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.16); color: #b9cde0; }
-
+ 
     @media (max-width: 1050px) {
       .desktop-nav { display: none; }
       .header-main { justify-content: space-between; }
@@ -527,7 +527,7 @@
       .choice-item:nth-child(4) { border-top: 1px solid rgba(255,255,255,.2); }
       .product-grid { grid-template-columns: repeat(2, 1fr); }
     }
-
+ 
     @media (max-width: 760px) {
       body { font-size: 16px; }
       .container { width: min(100% - 32px, 1180px); }
@@ -657,7 +657,7 @@
       body[data-screen="product"] .toast { bottom: 92px; }
       body[data-screen="checkout"] .site-footer { display: none; }
     }
-
+ 
     @media (max-width: 430px) {
       .header-actions .search-trigger { display: none; }
       .hero-image { min-height: 210px; height:210px; }
@@ -672,7 +672,7 @@
       .step::after { top: 14px; left: calc(50% + 17px); right: calc(-50% + 17px); }
       .reason-grid { grid-template-columns:1fr; }
     }
-
+ 
     @media (prefers-reduced-motion: reduce) {
       html { scroll-behavior: auto; }
       *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
@@ -687,7 +687,7 @@
   <div id="search-layer" class="search-layer" aria-hidden="true"></div>
   <div id="cart-sheet" class="cart-sheet" aria-hidden="true"></div>
   <div id="toast-region" aria-live="polite"></div>
-
+ 
   <script>
     const CATEGORIES = [
       { id: 'abonamente', name: 'Abonamente de sănătate', description: 'Pentru adulți și copii, pe o perioadă de 3, 6 sau 12 luni.', icon: 'heart', subcategories: [{id:'adulti',name:'Adulți'},{id:'copii',name:'Copii'}] },
@@ -696,7 +696,7 @@
       { id: 'stomatologie', name: 'Abonamente stomatologice', description: 'Opțiuni DentEstet pentru adulți și copii, cumpărate pe site-ul partenerului.', icon: 'smile', subcategories: [] },
       { id: 'sport', name: 'Sport și stare de bine', description: 'Pachete SWEAT și abonamente SanoPass FIT.', icon: 'activity', subcategories: [{id:'sweat',name:'SWEAT'},{id:'sanopass',name:'SanoPass FIT'}] }
     ];
-
+ 
     const PERIODS = {
       joy84: [{id:'3',label:'3 luni',total:252,monthly:84},{id:'6',label:'6 luni',total:479,monthly:79.8},{id:'12',label:'12 luni',total:907,monthly:75.6}],
       joy139: [{id:'3',label:'3 luni',total:417,monthly:139},{id:'6',label:'6 luni',total:792,monthly:132},{id:'12',label:'12 luni',total:1501,monthly:125.1}],
@@ -705,13 +705,13 @@
       levelup: [{id:'3',label:'3 luni',total:1140,monthly:380},{id:'6',label:'6 luni',total:2166,monthly:361},{id:'12',label:'12 luni',total:4104,monthly:342}],
       sanopass: [{id:'1',label:'1 lună',total:179,monthly:179},{id:'3',label:'3 luni',total:489,monthly:163},{id:'6',label:'6 luni',total:930,monthly:155},{id:'12',label:'12 luni',total:1704,monthly:142}]
     };
-
+ 
     const PRODUCTS = [
-      {id:'joy-bronze',category:'abonamente',subcategory:'adulti',name:'Joy Bronze',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Analizele esențiale, consultații incluse și acces la Hotline Medical 24/7.',route:'cart',kind:'subscription',periods:PERIODS.joy84,visual:'',benefits:['Set anual de analize inclus','9 consultații sau controale pe an','Hotline Medical 24/7','30% reducere la multe investigații'],detailsPdf:'assets/documents/joy-bronze.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-bronze'},
-      {id:'joy-silver',category:'abonamente',subcategory:'adulti',name:'Joy Silver',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Mai multe consultații incluse și reduceri mai mari decât la Bronze.',route:'cart',kind:'subscription',periods:PERIODS.joy139,visual:'',benefits:['Set anual de analize inclus','18 consultații sau controale pe an','50% reducere la multe investigații','7% reducere PharmaLife'],detailsPdf:'assets/documents/joy-silver.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-silver'},
-      {id:'joy-gold',category:'abonamente',subcategory:'adulti',name:'Joy Gold',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Acoperire extinsă la consultații, investigații și psihoterapie.',route:'cart',kind:'subscription',periods:PERIODS.joy269,visual:'',recommended:true,benefits:['18 consultații sau controale pe an','O ședință de psihoterapie inclusă','Reduceri de până la 70% la investigații','15% reducere la medicii de excelență'],detailsPdf:'assets/documents/joy-gold.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-gold'},
+      {id:'joy-bronze',category:'abonamente',subcategory:'adulti',name:'Joy Bronze',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Analizele esențiale, consultații incluse și acces la Hotline Medical 24/7.',route:'cart',kind:'subscription',periods:PERIODS.joy84,visual:'',benefits:['Set anual de analize inclus','9 consultații sau controale pe an','Hotline Medical 24/7','30% reducere la multe investigații'],detailsPdf:'joy-bronze.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-bronze'},
+      {id:'joy-silver',category:'abonamente',subcategory:'adulti',name:'Joy Silver',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Mai multe consultații incluse și reduceri mai mari decât la Bronze.',route:'cart',kind:'subscription',periods:PERIODS.joy139,visual:'',benefits:['Set anual de analize inclus','18 consultații sau controale pe an','50% reducere la multe investigații','7% reducere PharmaLife'],detailsPdf:'joy-silver.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-silver'},
+      {id:'joy-gold',category:'abonamente',subcategory:'adulti',name:'Joy Gold',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Acoperire extinsă la consultații, investigații și psihoterapie.',route:'cart',kind:'subscription',periods:PERIODS.joy269,visual:'',recommended:true,benefits:['18 consultații sau controale pe an','O ședință de psihoterapie inclusă','Reduceri de până la 70% la investigații','15% reducere la medicii de excelență'],detailsPdf:'joy-gold.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-gold'},
       {id:'joy-platinum',category:'abonamente',subcategory:'adulti',name:'Joy Platinum',family:'Abonament adulți',description:'Abonament de sănătate premium pentru adulți.',route:'cart',kind:'subscription',periods:PERIODS.joy539,visual:'',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-platinum'},
-      {id:'levelup',category:'abonamente',subcategory:'adulti',name:'LevelUp',family:'Abonament individual',audience:'Sănătate și wellbeing',description:'Consultații, analize și prevenție, completate de fitness, psihoterapie și beneficii pentru îngrijirea personală.',route:'cart',kind:'subscription',periods:PERIODS.levelup,visual:'',benefits:['9 consultații sau controale pe an','Set anual de analize inclus','Acces SanoPass la peste 550 de săli','4 ședințe de psihoterapie online'],detailsPdf:'assets/documents/levelup.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/levelup'},
+      {id:'levelup',category:'abonamente',subcategory:'adulti',name:'LevelUp',family:'Abonament individual',audience:'Sănătate și wellbeing',description:'Consultații, analize și prevenție, completate de fitness, psihoterapie și beneficii pentru îngrijirea personală.',route:'cart',kind:'subscription',periods:PERIODS.levelup,visual:'',benefits:['9 consultații sau controale pe an','Set anual de analize inclus','Acces SanoPass la peste 550 de săli','4 ședințe de psihoterapie online'],detailsPdf:'levelup.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/levelup'},
       {id:'junior-bronze',category:'abonamente',subcategory:'copii',name:'Joy Junior Bronze',family:'Abonament copii',description:'Abonament medical pentru copii, disponibil pe 3, 6 sau 12 luni.',route:'cart',kind:'subscription',periods:PERIODS.joy139,visual:'child',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/copii/joy-junior-bronze'},
       {id:'junior-silver',category:'abonamente',subcategory:'copii',name:'Joy Junior Silver',family:'Abonament copii',description:'Abonament medical pentru copii, disponibil pe 3, 6 sau 12 luni.',route:'cart',kind:'subscription',periods:PERIODS.joy269,visual:'child',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/copii/joy-junior-silver'},
       {id:'junior-gold',category:'abonamente',subcategory:'copii',name:'Joy Junior Gold',family:'Abonament copii',description:'Abonament medical pentru copii, disponibil pe 3, 6 sau 12 luni.',route:'cart',kind:'subscription',periods:PERIODS.joy539,visual:'child',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/copii/joy-junior-gold'},
@@ -743,7 +743,7 @@
       {id:'sanopass-gold',category:'sport',subcategory:'sanopass',name:'SanoPass Gold',family:'Abonament sport',description:'Abonament sport vândut pe site-ul SanoPass.',route:'external',kind:'external',amount:241,priceFrom:true,visual:'sport',external:'https://sanopass.ro/abonamentesala/gold'},
       {id:'sanopass-platinum',category:'sport',subcategory:'sanopass',name:'SanoPass Platinum',family:'Abonament sport',description:'Abonament sport vândut pe site-ul SanoPass.',route:'external',kind:'external',amount:375,priceFrom:true,visual:'sport',external:'https://sanopass.ro/abonamentesala/platinum'}
     ];
-
+ 
     const model = {
       screen: 'home', categoryId: 'abonamente', subcategoryId: 'adulti', productId: 'levelup', periodId: '3', variantId: 'laborator',
       city: '', unit: '', cart: [], beneficiaryType: 'self', checkoutStep: 1, guideChoice: 'balanced', promoCode: '',
@@ -757,7 +757,7 @@
         activationDate: '2026-08-15', terms: false, marketing: false
       }
     };
-
+ 
     const ICONS = {
       menu:'<path d="M4 7h16M4 12h16M4 17h16"/>', close:'<path d="m6 6 12 12M18 6 6 18"/>', search:'<circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/>', cart:'<path d="M3 4h2l2 11h10l2-7H6"/><circle cx="9" cy="19" r="1"/><circle cx="17" cy="19" r="1"/>', arrow:'<path d="M5 12h14M14 7l5 5-5 5"/>', chevron:'<path d="m9 6 6 6-6 6"/>', heart:'<path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2 4 4 0 0 1 7 2c0 5.6-7 10-7 10Z"/>', plus:'<path d="M12 5v14M5 12h14"/>', building:'<path d="M5 21V4h10v17M15 9h4v12M8 8h4M8 12h4M8 16h4"/>', smile:'<circle cx="12" cy="12" r="9"/><path d="M8 10h.01M16 10h.01M8 15c2.5 2 5.5 2 8 0"/>', activity:'<path d="M3 12h4l2-6 4 12 2-6h6"/>', check:'<path d="m5 12 4 4L19 6"/>', shield:'<path d="M12 3 5 6v5c0 5 3 8 7 10 4-2 7-5 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/>', document:'<path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v5h5M9 12h6M9 16h6"/>', location:'<path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/>'
     };
@@ -852,13 +852,13 @@
       ];
     }
     function goTop() { window.scrollTo({top:0,behavior:'auto'}); }
-
+ 
     function renderHeader() {
       const count = model.cart.length;
       document.getElementById('site-header').innerHTML = `
         <div class="container header-main">
           <button class="menu-button" data-action="toggle-menu" aria-label="Deschide meniul" aria-expanded="${model.menuOpen}">${icon('menu')}</button>
-          <a class="brand" href="#" data-action="home" aria-label="MedLife Shop, pagina principală"><img src="assets/logo-menu.svg" alt="MedLife"></a>
+          <a class="brand" href="#" data-action="home" aria-label="MedLife Shop, pagina principală"><img src="logo-menu.svg" alt="MedLife"></a>
           <nav class="desktop-nav" aria-label="Categorii shop">
             <button class="nav-link" data-action="open-category" data-category="abonamente">Abonamente</button>
             <button class="nav-link" data-action="open-category" data-category="pachete">Pachete medicale</button>
@@ -872,7 +872,7 @@
           </div>
         </div>`;
     }
-
+ 
     function renderDrawer() {
       const drawer = document.getElementById('mobile-drawer');
       drawer.classList.toggle('open', model.menuOpen);
@@ -880,7 +880,7 @@
       document.body.classList.toggle('menu-open', model.menuOpen || model.searchOpen || model.cartSheet);
       const consumerCategories = CATEGORIES.filter(c => c.id !== 'companii');
       drawer.innerHTML = `<div class="drawer-panel" role="dialog" aria-modal="true" aria-label="Meniu MedLife Shop">
-        <div class="drawer-head"><img src="assets/logo-menu.svg" alt="MedLife"><button class="icon-button" data-action="toggle-menu" aria-label="Închide meniul">${icon('close')}</button></div>
+        <div class="drawer-head"><img src="logo-menu.svg" alt="MedLife"><button class="icon-button" data-action="toggle-menu" aria-label="Închide meniul">${icon('close')}</button></div>
         <nav class="drawer-nav" aria-label="Categorii"><p class="drawer-section-label">Pentru persoane fizice</p>${consumerCategories.map(c => `<button data-action="open-category" data-category="${c.id}">${c.name}</button>`).join('')}<p class="drawer-section-label">Pentru companii</p><button data-action="open-category" data-category="companii">Pachete pentru companii · Cere ofertă</button></nav>
         <div class="drawer-group"><button class="btn btn-secondary btn-block" data-action="toggle-search">Caută în shop</button><a href="https://www.medlife.ro/termeni-si-conditii" target="_blank" rel="noopener">Termeni și condiții</a><a href="https://www.medlife.ro/contact" target="_blank" rel="noopener">Contact MedLife</a></div>
       </div>`;
@@ -888,20 +888,20 @@
       ['site-header','app','site-footer'].forEach(id => { document.getElementById(id).inert = overlayOpen; });
       if (model.menuOpen) requestAnimationFrame(() => drawer.querySelector('[aria-label="Închide meniul"]')?.focus());
     }
-
+ 
     function renderFooter() {
       document.getElementById('site-footer').innerHTML = `<div class="container">
-        <div class="footer-grid"><div><img class="footer-logo" src="assets/logo-menu.svg" alt="MedLife"><p>Abonamente și pachete medicale pentru persoane, familie și companii.</p></div>
+        <div class="footer-grid"><div><img class="footer-logo" src="logo-menu.svg" alt="MedLife"><p>Abonamente și pachete medicale pentru persoane, familie și companii.</p></div>
         <div><h3>Shop</h3><a href="#" data-action="open-category" data-category="abonamente">Abonamente de sănătate</a><a href="#" data-action="open-category" data-category="pachete">Pachete medicale</a><a href="#" data-action="open-category" data-category="companii">Pachete pentru companii</a></div>
         <div><h3>Ajutor</h3><a href="https://www.medlife.ro/contact" target="_blank" rel="noopener">Contact MedLife</a><a href="https://www.medlife.ro/termeni-si-conditii" target="_blank" rel="noopener">Termeni și condiții</a><a href="https://www.medlife.ro/politica-de-confidentialitate" target="_blank" rel="noopener">Confidențialitate</a></div></div>
         <div class="footer-bottom">© 2026 MedLife</div>
       </div>`;
     }
-
+ 
     function breadcrumbs(items) {
       return `<nav class="breadcrumbs container" aria-label="Breadcrumb"><ol><li><button data-action="home">MedLife</button>${icon('chevron')}</li><li><button data-action="home">Shop</button>${icon('chevron')}</li>${items.map((item,i) => `<li>${i === items.length-1 ? `<span aria-current="page">${item.label}</span>` : `<button data-action="${item.action}" ${item.category ? `data-category="${item.category}"` : ''} ${item.subcategory ? `data-subcategory="${item.subcategory}"` : ''}>${item.label}</button>${icon('chevron')}`}</li>`).join('')}</ol></nav>`;
     }
-
+ 
     function productCard(product) {
       const price = priceInfo(product);
       const duration = productDuration(product);
@@ -910,17 +910,17 @@
         <div class="product-body"><p>${product.description}</p><ul class="card-benefits">${cardComparisonRows(product).map(item => `<li><span class="benefit-label">${item.label}</span><span class="benefit-value">${item.value}</span></li>`).join('')}</ul><dl class="card-specs"><div><dt>Perioadă</dt><dd>${duration}</dd></div></dl><div class="price"><strong>${price.main}</strong> <span>${price.sub}</span></div><button class="btn btn-secondary card-action" data-action="open-product" data-product="${product.id}">${productCardAction(product)}</button></div>
       </article>`;
     }
-
+ 
     function homeProductCarousel(id, title, description, products, company=false) {
       return `<section class="home-carousel ${company?'company':'consumer'}"><div class="container"><div class="carousel-head"><div><h2>${title}</h2><p>${description}</p></div><div class="carousel-actions"><button class="carousel-arrow prev" data-action="scroll-carousel" data-target="${id}" data-direction="-1" aria-label="Produsele anterioare">${icon('arrow')}</button><button class="carousel-arrow" data-action="scroll-carousel" data-target="${id}" data-direction="1" aria-label="Produsele următoare">${icon('arrow')}</button><button class="btn btn-secondary carousel-all" data-action="open-category" data-category="${company?'companii':'abonamente'}">${company?'Toate soluțiile':'Toate abonamentele'}</button></div></div><div class="product-carousel" id="${id}" aria-label="${title}">${products.map(productCard).join('')}</div></div></section>`;
     }
-
+ 
     function renderHome() {
       const consumerProducts = ['joy-bronze','joy-silver','joy-gold','levelup'].map(productById);
       const companyProducts = ['b2b-bronze','b2b-silver','b2b-gold','b2b-platinum'].map(productById);
       return `<section class="hero"><div class="hero-grid">
         <div class="hero-copy"><h1>Sănătatea ta, într-un singur abonament.</h1><p class="lead">Consultații, analize și controale în toată rețeaua MedLife, pentru tine, familie sau echipă.</p><div class="button-row"><button class="btn btn-primary" data-action="open-category" data-category="abonamente">Vezi abonamentele</button><button class="btn btn-secondary" data-action="open-category" data-category="companii">Ofertă pentru companie</button></div></div>
-        <div class="hero-image"><img src="assets/medlife-shop-hero-14.jpg" width="1200" height="800" fetchpriority="high" decoding="async" alt="Mamă și fiică într-o clinică MedLife"></div>
+        <div class="hero-image"><img src="medlife-shop-hero-14.jpg" width="1200" height="800" fetchpriority="high" decoding="async" alt="Mamă și fiică într-o clinică MedLife"></div>
       </div></section>
       <section class="trust-strip" aria-label="Beneficii MedLife"><div class="container"><ul class="trust-list"><li>${icon('heart')} Rețea națională de clinici</li><li>${icon('activity')} Hotline Medical 24/7</li><li>${icon('location')} Puncte de recoltare în toată țara</li><li>${icon('check')} Programări online</li></ul></div></section>
       <section class="audience-paths"><div class="container"><div class="audience-paths-head"><h2>Pentru cine cauți?</h2></div><div class="audience-path-grid"><article class="audience-path"><span class="audience-path-icon">${icon('heart')}</span><div><h3>Persoane fizice</h3><p>Abonamente și pachete cu preț afișat, pe care le cumperi online.</p></div><button class="btn btn-primary" data-action="choose-audience" data-audience="consumer">Vezi produsele</button></article><article class="audience-path company"><span class="audience-path-icon">${icon('building')}</span><div><h3>Companii</h3><p>Soluții medicale pentru angajați, pe bază de ofertă.</p></div><button class="btn btn-secondary" data-action="choose-audience" data-audience="company">Vezi soluțiile pentru companii</button></article></div></div></section>
@@ -933,7 +933,7 @@
       <section class="section"><div class="container faq-list"><div class="section-head"><h2>Întrebări frecvente</h2></div><details open><summary>Când se activează abonamentul?<span>+</span></summary><p>Alegi data de activare în checkout. O verifici înainte să continui către plată.</p></details><details><summary>Ce include un abonament Joy?<span>+</span></summary><p>Consultații, analize și reduceri diferite pentru fiecare nivel. Lista exactă este disponibilă în PDF-ul fiecărui produs.</p></details><details><summary>Cum plătesc?<span>+</span></summary><p>Plătești online după ce verifici produsul, beneficiarul și totalul comenzii.</p></details></div></section>
       <section class="section-tight company-banner"><div class="container"><div><h2>Cauți un abonament pentru angajați?</h2><p>Completezi datele companiei și primești o ofertă adaptată echipei.</p></div><button class="btn" data-action="open-category" data-category="companii">Cere o ofertă</button></div></section>`;
     }
-
+ 
     function renderCategory() {
       const category = categoryById(model.categoryId);
       const activeSubcategoryId = model.subcategoryId || category.subcategories[0]?.id || null;
@@ -948,7 +948,7 @@
       <section class="how-it-works"><div class="container how-grid"><h2>Cum funcționează</h2><div class="how-step"><b>1</b><span>Alegi ${category.id==='pachete'?'pachetul':'planul'}</span></div><div class="how-step"><b>2</b><span>${category.id==='pachete'?'Alegi orașul și unitatea':'Completezi datele'}</span></div><div class="how-step"><b>3</b><span>${category.id==='pachete'?'Programezi serviciile când vrei':'Îți activăm abonamentul'}</span></div></div></section>
       <section class="section-tight catalog-page"><div class="container"><div class="catalog-meta"><p><strong>${products.length}</strong> ${category.id==='abonamente' ? `planuri pentru ${sub?.id==='copii'?'copii':'adulți'}` : products.length===1?'opțiune':'opțiuni'}</p></div>${products.length ? `<div class="product-grid">${products.map(productCard).join('')}</div>${guide}` : `<div class="empty-state"><h2>Nu sunt produse în această selecție</h2><p>Alege altă subcategorie.</p></div>`}</div></section>`;
     }
-
+ 
     function renderProduct() {
       const product = productById(model.productId);
       const category = categoryById(product.category);
@@ -972,19 +972,19 @@
       const levelupFaq = `<section class="pdp-faq"><div class="container faq-list"><h2>Întrebări frecvente</h2><details open><summary>Cum folosesc accesul SanoPass?<span>+</span></summary><p>Abonamentul include acces nelimitat prin SanoPass la peste 550 de săli de sport. Detaliile de activare sunt trimise după cumpărare.</p></details><details><summary>Câte consultații sunt incluse?<span>+</span></summary><p>Ai 3 consultații de Medicină Generală, 3 de Medicină Internă și 3 consultații sau controale la alegere din 21 de specialități.</p></details><details><summary>Ce servicii de wellbeing primesc?<span>+</span></summary><p>Ai 4 ședințe gratuite de psihoterapie online pe an, un detartraj și un periaj gratuit, plus un peeling Instant Glow Better gratuit pe an.</p></details><details><summary>Unde este valabil abonamentul?<span>+</span></summary><p>Beneficiile medicale sunt disponibile în hyperclinicile și punctele de recoltare MedLife din țară, în condițiile documentului abonamentului.</p></details></div></section>`;
       const womenFaq = `<section class="pdp-faq"><div class="container faq-list"><h2>Întrebări frecvente</h2><details open><summary>Cum cumpăr pachetul?<span>+</span></summary><p>Alegi varianta, orașul și unitatea, apoi adaugi pachetul în coș.</p></details><details><summary>Cum programez serviciile?<span>+</span></summary><p>După plată primești pe e-mail detaliile necesare pentru programare.</p></details><details><summary>Plătesc o singură dată?<span>+</span></summary><p>Da. Pachetul are plată unică.</p></details></div></section>`;
       const crossSell = isBronze ? {id:'junior-bronze',title:'Ai copii?',text:'Vezi Joy Junior Bronze, abonamentul medical pentru cei mici.'} : isWomen30 ? {id:'joy-bronze',title:'Merge bine cu un abonament de sănătate',text:'Joy Bronze îți oferă analize, consultații și Hotline Medical 24/7 pe tot anul.'} : null;
-      return `${breadcrumbs([{label:category.name,action:'open-category',category:category.id},...(sub ? [{label:sub.name,action:'open-subcategory',subcategory:sub.id}] : []),{label:product.name}])}<section><div class="container pdp-layout"><div class="pdp-gallery">${isBronze?`<div class="pdp-art product-cover"><img src="assets/joy-bronze-woman-14.jpg" width="497" height="380" decoding="async" alt="Joy Bronze, abonamentul prezentat de MedLife"></div>`:isLevelUp?`<div class="pdp-art product-cover"><img src="assets/levelup-hero-14.jpg" width="992" height="575" decoding="async" alt="LevelUp, abonament individual de servicii medicale și wellbeing"></div>`:`<div class="pdp-art ${product.visual || ''}"><span class="product-box" aria-hidden="true"></span><span class="product-family">${product.family}</span><strong>${product.name}</strong></div>`}</div><div class="pdp-main"><h1>${product.name}</h1><p class="product-audience">Pentru: ${product.audience || product.family}</p><p class="product-kind">${productIntro}</p>${isWomen30?`<span class="choice-label">Alege varianta</span><div class="variant-selector">${Object.entries(product.variants).map(([id,item])=>`<button class="variant-option" aria-pressed="${model.variantId===id}" data-action="select-variant" data-variant="${id}">${item.label}</button>`).join('')}</div><p class="variant-copy">${variant.description}</p>`:''}<div class="pdp-highlights">${highlights.map(item=>`<div class="pdp-highlight">${icon('check')}<span>${item}</span></div>`).join('')}</div><div class="pdp-purchase"><div class="pdp-price"><strong>${price.main}</strong><span>${price.sub}${period ? ` · ${formatMoney(period.total)} total` : ''}</span></div>${product.periods ? `<span class="choice-label">Alege perioada</span><div class="option-grid">${product.periods.map(p => `<button class="option" aria-pressed="${period.id === p.id}" data-action="select-period" data-period="${p.id}"><strong>${p.label}</strong><span>${formatMoney(p.total)} total</span>${periodDiscount(product,p)?`<em class="period-discount">${periodDiscount(product,p)}</em>`:''}</button>`).join('')}</div>` : ''}${locationFields}${docs}${product.route==='offer'?'<div class="route-note"><p>Prețul și condițiile se stabilesc într-o ofertă personalizată.</p></div>':''}${external?`<div class="route-note"><p>Cumpărarea continuă pe site-ul ${product.category==='stomatologie'?'DentEstet':'SanoPass'}.</p></div>`:''}<div class="pdp-buy"><button class="btn ${product.route==='cart'?'btn-cart':'btn-primary'} btn-block" data-action="product-cta" ${locationNeeded && (!model.city || !model.unit) ? 'disabled' : ''}>${ctaLabel(product)}</button></div><p class="pdp-assurance">${locationNeeded && (!model.city || !model.unit) ? 'Alege orașul și unitatea pentru a continua.' : product.kind==='subscription' ? 'Plătești în avans pentru perioada aleasă.' : product.kind==='one-off' ? 'Plată unică pentru varianta și locația alese.' : 'Cererea nu implică o plată.'}</p></div><div class="facts"><div class="fact-row">${icon('shield')}<p>Datele tale sunt protejate pe tot parcursul comenzii.</p></div>${isBronze||isLevelUp?`<div class="fact-row">${icon('location')}<p>Acces în hyperclinicile MedLife și în unitățile partenere eligibile.</p></div>`:''}</div></div></div></section>${isBronze?bronzeServices:isLevelUp?levelupServices:isWomen30?womenInfo:''}${isBronze?bronzeFaq:isLevelUp?levelupFaq:isWomen30?womenFaq:''}${crossSell?`<section class="section-tight"><div class="container"><div class="cross-sell"><div><h2>${crossSell.title}</h2><p>${crossSell.text}</p></div><button class="btn" data-action="open-product" data-product="${crossSell.id}">Vezi produsul</button></div></div></section>`:''}<div class="mobile-buybar"><p><span class="sticky-product">${product.name}</span><strong>${stickyPrice}</strong><span>${stickyLabel}</span></p><button class="btn ${product.route==='cart'?'btn-cart':'btn-primary'}" data-action="product-cta" ${locationNeeded && (!model.city || !model.unit) ? 'disabled' : ''}>${product.route==='cart'?'Adaugă în coș':product.route==='offer'?'Cere ofertă':'Continuă'}</button></div>`;
+      return `${breadcrumbs([{label:category.name,action:'open-category',category:category.id},...(sub ? [{label:sub.name,action:'open-subcategory',subcategory:sub.id}] : []),{label:product.name}])}<section><div class="container pdp-layout"><div class="pdp-gallery">${isBronze?`<div class="pdp-art product-cover"><img src="joy-bronze-woman-14.jpg" width="497" height="380" decoding="async" alt="Joy Bronze, abonamentul prezentat de MedLife"></div>`:isLevelUp?`<div class="pdp-art product-cover"><img src="levelup-hero-14.jpg" width="992" height="575" decoding="async" alt="LevelUp, abonament individual de servicii medicale și wellbeing"></div>`:`<div class="pdp-art ${product.visual || ''}"><span class="product-box" aria-hidden="true"></span><span class="product-family">${product.family}</span><strong>${product.name}</strong></div>`}</div><div class="pdp-main"><h1>${product.name}</h1><p class="product-audience">Pentru: ${product.audience || product.family}</p><p class="product-kind">${productIntro}</p>${isWomen30?`<span class="choice-label">Alege varianta</span><div class="variant-selector">${Object.entries(product.variants).map(([id,item])=>`<button class="variant-option" aria-pressed="${model.variantId===id}" data-action="select-variant" data-variant="${id}">${item.label}</button>`).join('')}</div><p class="variant-copy">${variant.description}</p>`:''}<div class="pdp-highlights">${highlights.map(item=>`<div class="pdp-highlight">${icon('check')}<span>${item}</span></div>`).join('')}</div><div class="pdp-purchase"><div class="pdp-price"><strong>${price.main}</strong><span>${price.sub}${period ? ` · ${formatMoney(period.total)} total` : ''}</span></div>${product.periods ? `<span class="choice-label">Alege perioada</span><div class="option-grid">${product.periods.map(p => `<button class="option" aria-pressed="${period.id === p.id}" data-action="select-period" data-period="${p.id}"><strong>${p.label}</strong><span>${formatMoney(p.total)} total</span>${periodDiscount(product,p)?`<em class="period-discount">${periodDiscount(product,p)}</em>`:''}</button>`).join('')}</div>` : ''}${locationFields}${docs}${product.route==='offer'?'<div class="route-note"><p>Prețul și condițiile se stabilesc într-o ofertă personalizată.</p></div>':''}${external?`<div class="route-note"><p>Cumpărarea continuă pe site-ul ${product.category==='stomatologie'?'DentEstet':'SanoPass'}.</p></div>`:''}<div class="pdp-buy"><button class="btn ${product.route==='cart'?'btn-cart':'btn-primary'} btn-block" data-action="product-cta" ${locationNeeded && (!model.city || !model.unit) ? 'disabled' : ''}>${ctaLabel(product)}</button></div><p class="pdp-assurance">${locationNeeded && (!model.city || !model.unit) ? 'Alege orașul și unitatea pentru a continua.' : product.kind==='subscription' ? 'Plătești în avans pentru perioada aleasă.' : product.kind==='one-off' ? 'Plată unică pentru varianta și locația alese.' : 'Cererea nu implică o plată.'}</p></div><div class="facts"><div class="fact-row">${icon('shield')}<p>Datele tale sunt protejate pe tot parcursul comenzii.</p></div>${isBronze||isLevelUp?`<div class="fact-row">${icon('location')}<p>Acces în hyperclinicile MedLife și în unitățile partenere eligibile.</p></div>`:''}</div></div></div></section>${isBronze?bronzeServices:isLevelUp?levelupServices:isWomen30?womenInfo:''}${isBronze?bronzeFaq:isLevelUp?levelupFaq:isWomen30?womenFaq:''}${crossSell?`<section class="section-tight"><div class="container"><div class="cross-sell"><div><h2>${crossSell.title}</h2><p>${crossSell.text}</p></div><button class="btn" data-action="open-product" data-product="${crossSell.id}">Vezi produsul</button></div></div></section>`:''}<div class="mobile-buybar"><p><span class="sticky-product">${product.name}</span><strong>${stickyPrice}</strong><span>${stickyLabel}</span></p><button class="btn ${product.route==='cart'?'btn-cart':'btn-primary'}" data-action="product-cta" ${locationNeeded && (!model.city || !model.unit) ? 'disabled' : ''}>${product.route==='cart'?'Adaugă în coș':product.route==='offer'?'Cere ofertă':'Continuă'}</button></div>`;
     }
-
+ 
     function renderCart() {
       if (!model.cart.length) return `${breadcrumbs([{label:'Coșul meu'}])}<section class="checkout-shell cart-page"><div class="container"><div class="checkout-title"><h1>Coșul tău e gol</h1><p class="lead">Vezi abonamentele și pachetele MedLife.</p><div class="button-row"><button class="btn btn-primary" data-action="open-category" data-category="abonamente">Vezi abonamentele</button><button class="btn btn-secondary" data-action="open-category" data-category="pachete">Vezi pachetele</button></div></div></div></section>`;
       return `${breadcrumbs([{label:'Coșul meu'}])}<section class="checkout-shell cart-page"><div class="container"><div class="checkout-title"><h1>Coșul meu</h1><p class="lead">Poți combina abonamente și pachete. Pentru alt beneficiar, bifează opțiunea de sub produs.</p></div><div class="checkout-grid"><div class="cart-list">${model.cart.map((item,index)=>{const product=productById(item.productId);return `<article class="cart-item-card"><div class="cart-item"><div class="order-thumb"><span class="product-box" aria-hidden="true"></span></div><div><h2>${product.name}</h2><p>${item.periodLabel || 'Plată unică'}${item.variantLabel ? ` · ${item.variantLabel}` : ''}${item.city ? ` · ${item.city}, ${item.unit}` : ''}</p><p><strong>${formatMoney(item.total)}</strong></p><div class="cart-actions"><button class="remove-button" data-action="edit-cart" data-index="${index}">${product.periods ? 'Schimbă perioada' : 'Modifică selecția'}</button><button class="remove-button" data-action="remove-cart" data-index="${index}">Elimină</button></div><div class="cart-beneficiary"><label class="beneficiary-check"><input type="checkbox" data-cart-other data-index="${index}" ${item.beneficiaryType==='other'?'checked':''}><span>Nu sunt beneficiarul acestui serviciu</span></label>${item.beneficiaryType==='other'?`<input type="text" aria-label="Numele beneficiarului pentru ${product.name}" value="${escapeHTML(item.beneficiaryName || '')}" placeholder="Nume beneficiar" data-cart-beneficiary-name data-index="${index}">`:''}</div></div></div></article>`;}).join('')}<details class="promo"><summary>Ai un cod de reducere?</summary><div class="promo-row"><input id="promo-code" value="${escapeHTML(model.promoCode)}" placeholder="Introdu codul"><button class="btn btn-secondary" data-action="apply-promo">Aplică</button></div></details></div>${orderSummary('cart')}</div></div></section>`;
     }
-
+ 
     function orderSummary(mode) {
       const total = cartTotal();
       return `<aside class="checkout-card order-summary" aria-label="Rezumat comandă"><h2>Rezumat</h2><div class="summary-row"><span>${model.cart.length} ${model.cart.length===1?'produs':'produse'}</span><strong>${formatMoney(total)}</strong></div><div class="summary-row summary-total"><span>Total</span><strong>${formatMoney(total)}</strong></div>${mode==='cart'?'<button class="btn btn-primary btn-block" data-action="checkout">Continuă la checkout</button>':''}<div class="secure-note">${icon('shield')}<span>Nu ai nevoie de cont. Verifici datele și totalul înainte de plată.</span></div></aside>`;
     }
-
+ 
     function field(name,label,type='text',required=true,autocomplete='',helper='') {
       const value = escapeHTML(model.checkoutData[name] || '');
       const error = model.errors[name];
@@ -992,13 +992,13 @@
       const numeric = ['cnp','beneficiaryCnp','idNumber'].includes(name) ? 'inputmode="numeric"' : '';
       return `<div class="field ${value && !error ? 'field-valid' : ''}"><input id="${name}" name="${name}" type="${type}" value="${value}" placeholder=" " ${numeric} ${autocomplete?`autocomplete="${autocomplete}"`:''} ${required?'required aria-required="true"':''} ${describedBy?`aria-describedby="${describedBy}"`:''} aria-invalid="${Boolean(error)}" data-checkout-field><label for="${name}">${label}${required ? ' *' : ' (opțional)'}</label>${helper ? `<p id="${name}-help" class="muted">${helper}</p>` : ''}${error ? `<p id="${name}-error" class="field-error">${error}</p>` : ''}</div>`;
     }
-
+ 
     function selectField(name,label,options) {
       const value = model.checkoutData[name] || '';
       const error = model.errors[name];
       return `<div class="field ${value && !error ? 'field-valid' : ''}"><select id="${name}" name="${name}" required aria-required="true" aria-invalid="${Boolean(error)}" ${error?`aria-describedby="${name}-error"`:''} data-checkout-field><option value="">Alege</option>${options.map(option => `<option ${value===option?'selected':''}>${option}</option>`).join('')}</select><label for="${name}">${label} *</label>${error ? `<p id="${name}-error" class="field-error">${error}</p>` : ''}</div>`;
     }
-
+ 
     function personField(person,name,label,type='text',autocomplete='') {
       const record = beneficiaryRecord(person);
       const safe = person.key.replace(/[^a-z0-9-]/gi,'');
@@ -1008,7 +1008,7 @@
       const numeric = ['cnp','idNumber'].includes(name) ? 'inputmode="numeric"' : '';
       return `<div class="field ${value && !error ? 'field-valid' : ''}"><input id="${id}" type="${type}" value="${value}" placeholder=" " ${numeric} ${autocomplete?`autocomplete="${autocomplete}"`:''} required aria-required="true" aria-invalid="${Boolean(error)}" ${error?`aria-describedby="${id}-error"`:''} data-person-field="${name}" data-person-key="${escapeHTML(person.key)}"><label for="${id}">${label} *</label>${error?`<p id="${id}-error" class="field-error">${error}</p>`:''}</div>`;
     }
-
+ 
     function personSelect(person,name,label,options) {
       const record = beneficiaryRecord(person);
       const safe = person.key.replace(/[^a-z0-9-]/gi,'');
@@ -1017,16 +1017,16 @@
       const error = model.errors[id];
       return `<div class="field ${value && !error ? 'field-valid' : ''}"><select id="${id}" required aria-required="true" aria-invalid="${Boolean(error)}" data-person-field="${name}" data-person-key="${escapeHTML(person.key)}"><option value="">Alege</option>${options.map(option=>`<option ${value===option?'selected':''}>${option}</option>`).join('')}</select><label for="${id}">${label} *</label>${error?`<p class="field-error">${error}</p>`:''}</div>`;
     }
-
+ 
     function checkoutSteps() {
       const labels = ['Contact', 'Identitate', 'Plată'];
       return `<div class="steps" aria-label="Progres checkout">${labels.map((label,index) => { const step=index+1; const state=step < model.checkoutStep ? 'done' : step === model.checkoutStep ? 'active' : ''; return `<div class="step ${state}" ${step === model.checkoutStep ? 'aria-current="step"' : ''} aria-label="${label}${state==='done'?', finalizat':state==='active'?', pas curent':''}"><span class="step-number">${step}</span><span class="step-label">${label}</span></div>`; }).join('')}</div>`;
     }
-
+ 
     function checkoutContext() {
       return `<div class="checkout-context"><div><strong>${model.cart.length} ${model.cart.length===1?'produs':'produse'}</strong><span>${model.cart.map(item=>productById(item.productId).name).join(' · ')}</span></div><span class="context-price">${formatMoney(cartTotal())}</span></div>`;
     }
-
+ 
     function renderCheckoutStep(product) {
       const hasSubscription = model.cart.some(item=>productById(item.productId).kind==='subscription');
       const people = cartPeople();
@@ -1034,14 +1034,14 @@
       if (model.checkoutStep === 2) return `<div class="checkout-card checkout-step-card"><h2>Act de identitate și activare</h2><p class="checkout-step-intro">Completezi datele o singură dată pentru fiecare persoană. Datele actului apar în contract, iar actul conține și CNP-ul.</p>${people.map((person,index)=>`<details class="person-block" ${index===0 || personHasErrors(person)?'open':''}><summary>${person.name}<span>${maskCnp(beneficiaryRecord(person).cnp)}</span></summary><div class="person-fields">${personSelect(person,'idType','Tip act de identitate',['Carte de identitate','Pașaport'])}<div class="field-row">${personField(person,'idSeries','Serie act')}${personField(person,'idNumber','Număr act')}</div><div class="field-row">${personField(person,'cnp','CNP')}${personField(person,'birthDate','Data nașterii','date',person.key==='self'?'bday':'')}</div>${personField(person,'birthPlace','Locul nașterii')}<div class="field-row">${personField(person,'idIssueDate','Data emiterii','date')}${personField(person,'idExpiryDate','Data expirării','date')}</div>${personField(person,'idIssuer','Entitatea emitentă')}</div></details>`).join('')}${hasSubscription ? `<h3 class="form-section-title">Activare</h3>${field('activationDate','Data de activare','date',true)}` : `<div class="activation-note"><strong>${model.cart[0]?.city || 'Locația produsului'}</strong><p>${model.cart[0]?.unit || ''}</p></div>`}<div class="checkout-nav"><button class="checkout-back" type="button" data-action="checkout-back">Înapoi</button><button class="btn btn-primary checkout-next" type="submit">Continuă la plată</button></div></div>`;
       return `<div class="checkout-card checkout-step-card"><h2>Plată</h2><details class="review-summary"><summary>Verifică datele comenzii <span>+</span></summary><ul class="review-list">${people.map(person=>{const record=beneficiaryRecord(person);return `<li><span>${person.name}</span><strong>${escapeHTML(record.firstName)} ${escapeHTML(record.lastName)} · ${maskCnp(record.cnp)}</strong></li>`;}).join('')}<li><span>E-mail</span><strong>${maskEmail(model.checkoutData.email)}</strong></li><li><span>Telefon</span><strong>${maskPhone(model.checkoutData.phone)}</strong></li>${hasSubscription?`<li><span>Activare</span><strong>${escapeHTML(model.checkoutData.activationDate)}</strong></li>`:''}<li><span>Total</span><strong>${formatMoney(cartTotal())}</strong></li></ul><button class="checkout-back" type="button" data-action="edit-contact">Editează datele</button></details><div class="checkbox"><input id="terms" name="terms" type="checkbox" required aria-required="true" ${model.errors.terms ? 'aria-invalid="true" aria-describedby="terms-error"' : ''} ${model.checkoutData.terms?'checked':''} data-checkout-check><label for="terms">Am citit și accept <a href="https://www.medlife.ro/termeni-si-conditii" target="_blank" rel="noopener noreferrer">contractul și condițiile produselor</a>.</label></div>${model.errors.terms?`<p id="terms-error" class="field-error">${model.errors.terms}</p>`:''}<div class="checkbox"><input id="marketing" name="marketing" type="checkbox" ${model.checkoutData.marketing?'checked':''} data-checkout-check><label for="marketing">Vreau să primesc noutăți și oferte MedLife. (opțional)</label></div><div class="route-note"><strong>Plată securizată</strong><p>Nu se face nicio plată acum. Introduci cardul în pasul securizat următor, iar datele tale sunt criptate.</p></div><div class="checkout-nav"><button class="checkout-back" type="button" data-action="checkout-back">Înapoi</button><button class="btn btn-primary checkout-next" type="submit">Continuă către plată</button></div></div>`;
     }
-
+ 
     function renderCheckout() {
       if (!model.cart.length) return renderCart();
       const product = productById(model.cart[0].productId);
       const stepTitles = ['Contact', 'Act de identitate și activare', 'Plată'];
       return `${breadcrumbs([{label:'Checkout'}])}<section class="checkout-shell checkout-page"><div class="container"><div class="checkout-title"><h1>${stepTitles[model.checkoutStep-1]}</h1>${checkoutSteps()}</div>${checkoutContext()}<div class="checkout-grid"><form id="checkout-step-form" novalidate>${renderCheckoutStep(product)}</form>${orderSummary('checkout')}</div></div></section>`;
     }
-
+ 
     function maskCnp(value) { const clean = String(value || '').replace(/\s/g,''); return clean ? `${clean.slice(0,1)}••••••••${clean.slice(-4)}` : '—'; }
     function maskPhone(value) { const clean=String(value || '').replace(/\s/g,''); return clean.length > 4 ? `${clean.slice(0,3)} ••• ${clean.slice(-3)}` : '—'; }
     function maskEmail(value) { const [name,domain=''] = String(value || '').split('@'); return name ? `${name.slice(0,2)}•••@${domain}` : '—'; }
@@ -1050,18 +1050,18 @@
       model.checkoutStep = 3;
       return renderCheckout();
     }
-
+ 
     function offerField(name,label,type='text') { return field(name,label,type,true); }
     function renderOffer() {
       const product = productById(model.productId);
       return `${breadcrumbs([{label:'Pachete pentru companii',action:'open-category',category:'companii'},{label:'Cerere de ofertă'}])}<section class="checkout-shell checkout-page"><div class="container"><div class="checkout-title"><h1>Cere ofertă pentru ${product.name}</h1><p class="lead">Spune-ne cine ești și pentru câți angajați cauți un abonament.</p></div><div class="checkout-grid"><form id="offer-form" novalidate><div class="checkout-card"><h2>Date de contact</h2><div class="field-row">${offerField('firstName','Prenume')}${offerField('lastName','Nume')}</div><div class="field-row">${offerField('email','E-mail','email')}${offerField('phone','Telefon','tel')}</div></div><div class="checkout-card"><h2>Date companie</h2>${offerField('company','Nume companie')}<div class="field-row">${offerField('cui','CUI')}${offerField('employees','Număr angajați','number')}</div></div></form><aside class="checkout-card order-summary"><h2>Solicitare</h2><div class="order-product"><div class="order-thumb">B2B</div><div><h3>${product.name}</h3><p>${product.family}</p></div></div><div class="summary-row summary-total"><span>Preț</span><strong>Personalizat</strong></div><button class="btn btn-primary btn-block" type="submit" form="offer-form">Verifică formularul</button><p class="secure-note">Cererea nu implică o plată.</p></aside></div></div></section>`;
     }
-
+ 
     function renderSuccess(kind='order') {
       const isOffer = kind === 'offer';
       return `<section class="success-page"><div class="container"><div class="success-card"><div class="success-icon">${icon('check')}</div><h1>${isOffer ? 'Cererea ta e pregătită' : 'Comanda ta e pregătită'}</h1><p class="lead">${isOffer ? 'Datele companiei sunt complete. Poți trimite cererea către echipa MedLife.' : 'Ți-am trimis confirmarea pe e-mail. Urmează plata securizată, apoi îți activăm produsele.'}</p><div class="reference"><span>Număr comandă</span><strong>ML-260813-1042</strong></div>${isOffer?'':`<h2>Ce urmează</h2><ol><li>Continui către plata securizată.</li><li>Primești contractul și confirmarea pe e-mail.</li><li>Abonamentul se activează la data aleasă.</li></ol><p><a href="https://www.medlife.ro/contact" target="_blank" rel="noopener">Ai nevoie de ajutor? Contactează MedLife</a></p>`}<button class="btn btn-primary" data-action="home">Înapoi la shop</button></div></div></section>`;
     }
-
+ 
     function renderSearch() {
       const layer = document.getElementById('search-layer');
       layer.classList.toggle('open', model.searchOpen);
@@ -1071,7 +1071,7 @@
       layer.innerHTML = `<div class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-title"><div class="search-head"><h2 id="search-title">Caută în shop</h2><button class="icon-button" data-action="toggle-search" aria-label="Închide căutarea">${icon('close')}</button></div><label class="sr-only" for="shop-search">Caută abonamente și pachete</label><input id="shop-search" class="search-input" type="search" value="${escapeHTML(model.search)}" placeholder="Caută abonamente și pachete" autocomplete="off">${query.length < 2 ? `<p class="muted search-results">Scrie cel puțin două litere.</p>` : `<div class="search-results">${results.length ? results.map(p => `<button class="search-result" data-action="open-product" data-product="${p.id}"><strong>${p.name}</strong><span>${p.family}</span></button>`).join('') : `<p>Nu am găsit produse pentru această căutare.</p>`}</div>`}</div>`;
       if (model.searchOpen) requestAnimationFrame(() => document.getElementById('shop-search')?.focus());
     }
-
+ 
     function renderCartSheet() {
       const layer = document.getElementById('cart-sheet');
       layer.classList.toggle('open', model.cartSheet);
@@ -1084,13 +1084,13 @@
       ['site-header','app','site-footer'].forEach(id => { document.getElementById(id).inert = true; });
       requestAnimationFrame(() => layer.querySelector('[data-action="cart-sheet-goto"]')?.focus());
     }
-
+ 
     function alignBreadcrumb() {
       const nav = document.querySelector('.breadcrumbs');
       const current = document.querySelector('[aria-current="page"]')?.closest('li');
       if (nav && current) nav.scrollLeft = Math.max(0, current.offsetLeft + current.offsetWidth - nav.clientWidth);
     }
-
+ 
     function render() {
       document.body.dataset.screen = model.screen;
       renderHeader(); renderDrawer(); renderFooter();
@@ -1106,7 +1106,7 @@
       renderSearch(); renderCartSheet();
       requestAnimationFrame(alignBreadcrumb);
     }
-
+ 
     function closeOverlays() { model.menuOpen = false; model.searchOpen = false; model.cartSheet = false; document.body.classList.remove('menu-open'); }
     function closeOverlayAndRestore() {
       const action = model.returnFocusAction;
@@ -1134,7 +1134,7 @@
       else { model.cart.push(item); model.addedCartIndex=model.cart.length-1; }
       model.cartSheet = true; render();
     }
-
+ 
     function validate(names) {
       model.errors = {};
       names.forEach(name => { const value = String(model.checkoutData[name] || '').trim(); if (!value) model.errors[name] = 'Completează acest câmp.'; });
@@ -1145,7 +1145,7 @@
       if (names.includes('employees') && Number(model.checkoutData.employees) < 1) model.errors.employees = 'Introdu numărul de angajați.';
       return Object.keys(model.errors).length === 0;
     }
-
+ 
     function collectForm(form) {
       form.querySelectorAll('[data-checkout-field]').forEach(el => model.checkoutData[el.name]=el.value);
       form.querySelectorAll('[data-checkout-check]').forEach(el => model.checkoutData[el.name]=el.checked);
@@ -1185,7 +1185,7 @@
       if (!validate(['firstName','lastName','email','phone','company','cui','employees'])) { render(); focusFirstError(); return; }
       model.successKind='offer'; route('success');
     }
-
+ 
     document.addEventListener('click', event => {
       const target = event.target.closest('[data-action]'); if (!target) return;
       const action = target.dataset.action;
@@ -1223,12 +1223,12 @@
       if (action === 'checkout-back') { model.checkoutStep=Math.max(1,model.checkoutStep-1); model.errors={}; render(); goTop(); }
       if (action === 'edit-contact') { model.checkoutStep=1; model.errors={}; render(); goTop(); }
     });
-
+ 
     document.addEventListener('submit', event => {
       if (event.target.id === 'checkout-step-form') { event.preventDefault(); advanceCheckout(event.target); }
       if (event.target.id === 'offer-form') { event.preventDefault(); submitOffer(event.target); }
     });
-
+ 
     document.addEventListener('change', event => {
       if (event.target.matches('[data-field="city"]')) { model.city=event.target.value; model.unit=''; model.errors={}; render(); }
       if (event.target.matches('[data-field="unit"]')) { model.unit=event.target.value; model.errors={}; render(); }
@@ -1237,14 +1237,14 @@
       if (event.target.matches('[data-checkout-check]')) model.checkoutData[event.target.name]=event.target.checked;
       if (event.target.matches('[data-person-field]')) { const record=event.target.dataset.personKey==='self'?model.checkoutData:(model.beneficiaryData[event.target.dataset.personKey] ||= {}); record[event.target.dataset.personField]=event.target.value; }
     });
-
+ 
     document.addEventListener('input', event => {
       if (event.target.id === 'shop-search') { model.search=event.target.value; renderSearch(); }
       if (event.target.matches('[data-checkout-field]')) model.checkoutData[event.target.name]=event.target.value;
       if (event.target.matches('[data-cart-beneficiary-name]')) model.cart[Number(event.target.dataset.index)].beneficiaryName=event.target.value;
       if (event.target.matches('[data-person-field]')) { const record=event.target.dataset.personKey==='self'?model.checkoutData:(model.beneficiaryData[event.target.dataset.personKey] ||= {}); record[event.target.dataset.personField]=event.target.value; }
     });
-
+ 
     document.addEventListener('keydown', event => {
       if (event.key === 'Escape' && model.cartSheet) { model.cartSheet=false; render(); return; }
       if (event.key === 'Escape' && (model.menuOpen || model.searchOpen)) { closeOverlayAndRestore(); return; }
@@ -1261,7 +1261,7 @@
     document.getElementById('search-layer').addEventListener('click', event => { if (event.target.id === 'search-layer') closeOverlayAndRestore(); });
     document.getElementById('cart-sheet').addEventListener('click', event => { if (event.target.id === 'cart-sheet') { model.cartSheet=false; render(); } });
     window.addEventListener('resize', () => requestAnimationFrame(alignBreadcrumb));
-
+ 
     window.medlifeShop = {
       home: () => route('home'),
       category: id => { model.categoryId=id; model.subcategoryId=categoryById(id).subcategories[0]?.id || null; route('category'); },
@@ -1269,7 +1269,7 @@
       cart: () => route('cart'),
       reset: () => { model.cart=[]; model.checkoutStep=1; model.beneficiaryType='self'; model.errors={}; route('home'); }
     };
-
+ 
     render();
   </script>
 </body>
