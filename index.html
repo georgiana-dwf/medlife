@@ -212,31 +212,34 @@
     .company .carousel-all { border-color:white; background:white; color:var(--navy); }
     .product-carousel { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(300px,calc((100% - 40px)/3)); gap:20px; padding:4px 4px 24px; overflow-x:auto; overscroll-behavior-inline:contain; scroll-snap-type:inline mandatory; scrollbar-width:thin; scrollbar-color:#aebdca transparent; }
     .product-carousel .product-card { scroll-snap-align:start; }
-    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: stretch; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: stretch; }
     .product-card {
       display: flex; flex-direction: column; min-width: 0; overflow: hidden; border-radius: var(--radius);
       background: white; box-shadow: 0 7px 24px rgba(9, 39, 75, .08); transition:transform .18s ease, box-shadow .18s ease;
     }
     .product-card:hover { transform:translateY(-4px); box-shadow:0 16px 36px rgba(9,39,75,.13); }
-    .product-visual { min-height: 128px; display: flex; flex-direction: column; justify-content: end; padding: 24px; background: #e9f4fb; }
+    .product-visual { position: relative; min-height: 128px; display: flex; flex-direction: column; justify-content: end; padding: 24px; background: #e9f4fb; }
     .product-visual.child { background: #f0eefb; }
     .product-visual.package { background: #ecf7f1; }
     .product-visual.company { background: #e8eef6; }
     .product-visual.sport { background: #eef1f8; }
     .product-visual.dental { background: #f7f1ec; }
+    .product-visual.photo-levelup {
+      background-image: linear-gradient(180deg, rgba(11,31,58,0) 40%, rgba(9,25,48,.82) 100%), url('levelup-hero-14.jpg');
+      background-size: cover, cover; background-position: center, center top; background-repeat: no-repeat, no-repeat;
+    }
+    .product-visual.photo-levelup .product-box { display: none; }
+    .product-visual.photo-levelup .product-family { color: #cfe6f7; }
+    .product-visual.photo-levelup h3 { color: #fff; }
     .product-family { margin-bottom: 8px; color: var(--blue); font-weight: 700; }
     .product-visual h3 { max-width: 14ch; margin: 0; color: var(--navy-2); font-size: 1.55rem; line-height: 1.1; }
     .product-body { flex: 1; display: flex; flex-direction: column; padding: 24px; }
     .product-body p { color: var(--muted); }
-    .card-specs { display: grid; gap: 0; margin: 8px 0 20px; border-top: 1px solid var(--line); }
-    .card-specs div { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); }
-    .card-specs dt { color: var(--muted); }
-    .card-specs dd { margin: 0; color: var(--navy-2); font-weight: 700; text-align: right; }
     .price { margin-top: auto; margin-bottom: 18px; color: var(--navy-2); }
     .price strong { font-size: 1.55rem; letter-spacing: -.02em; }
     .price span { color: var(--muted); }
     .card-action { width: 100%; }
-    .product-badge { align-self: flex-start; margin-bottom: 10px; padding: 5px 9px; border-radius: 999px; background: var(--warm); color: #12284c; font-size: .78rem; font-weight: 850; }
+    .product-badge { position: absolute; top: 16px; right: 16px; z-index: 2; padding: 5px 9px; border-radius: 999px; background: var(--warm); color: #12284c; font-size: .78rem; font-weight: 850; }
     .product-box { position: relative; width: 118px; height: 92px; margin: 4px auto 22px; transform: rotate(-4deg); filter: drop-shadow(0 14px 15px rgba(8,46,97,.16)); }
     .product-box::before { content:""; position:absolute; inset:10px 8px 0 0; border-radius:8px; background:linear-gradient(145deg,#fff 0 54%,#dbeaf5 55%); border:1px solid rgba(8,46,97,.12); }
     .product-box::after { content:"+"; position:absolute; left:42px; top:28px; width:34px; height:34px; display:grid; place-items:center; border-radius:8px; background:var(--box-accent,#e8b25b); color:white; font-size:26px; font-weight:800; }
@@ -581,25 +584,23 @@
       .product-visual h3 { font-size: 1.15rem; }
       .product-box { width:84px; height:68px; margin:8px auto 18px; }
       .product-box::after { left:28px; top:21px; width:28px; height:28px; font-size:21px; }
-      .product-badge { font-size:.68rem; }
+      .product-badge { font-size:.68rem; top:12px; right:12px; }
       .product-body { padding: 18px 16px; }
       .product-body > p { margin-bottom: 8px; font-size: .92rem; }
-      .card-specs { margin: 4px 0 14px; font-size: .88rem; }
-      .card-specs div { display: block; padding: 6px 0; }
-      .card-specs dt, .card-specs dd { display: inline; text-align: left; }
-      .card-specs dt::after { content: ": "; }
       .price { margin-bottom: 12px; }
       .price strong { font-size: 1.35rem; }
       .card-action { min-height: 46px; padding: 10px 12px; }
+      .product-grid-subscriptions .product-card { display:flex; flex-direction:column; border:0; box-shadow:0 7px 24px rgba(9,39,75,.10); }
+      .product-grid-subscriptions .product-visual { min-height:148px; padding:20px; justify-content:flex-end; }
+      .product-grid-subscriptions .product-box { width:84px; height:68px; margin:0 0 16px; }
+      .product-grid-subscriptions .product-body { padding:20px; }
+      .product-grid-subscriptions .product-body > p { margin-bottom:16px; line-height:1.5; }
       .product-carousel .product-card { display:flex; flex-direction:column; border:0; box-shadow:0 7px 24px rgba(9,39,75,.10); }
       .product-carousel .product-visual { min-height:148px; padding:20px; justify-content:flex-end; }
       .product-carousel .product-box { width:84px; height:68px; margin:0 0 16px; }
       .product-carousel .product-body { padding:20px; }
       .product-carousel .product-body > p { margin-bottom:16px; line-height:1.5; }
       .product-carousel .card-benefits li { grid-template-columns:88px 1fr; gap:12px; padding:9px 0; }
-      .product-carousel .card-specs div { display:flex; }
-      .product-carousel .card-specs dt,.product-carousel .card-specs dd { display:block; }
-      .product-carousel .card-specs dt::after { content:""; }
       .pdp-layout { grid-template-columns: 1fr; gap: 30px; padding:0 0 16px; }
       .pdp-services { padding:24px 0 48px; }
       .pdp-gallery { display:block; }
@@ -711,7 +712,7 @@
       {id:'joy-silver',category:'abonamente',subcategory:'adulti',name:'Joy Silver',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Mai multe consultații incluse și reduceri mai mari decât la Bronze.',route:'cart',kind:'subscription',periods:PERIODS.joy139,visual:'',benefits:['Set anual de analize inclus','18 consultații sau controale pe an','50% reducere la multe investigații','7% reducere PharmaLife'],detailsPdf:'joy-silver.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-silver'},
       {id:'joy-gold',category:'abonamente',subcategory:'adulti',name:'Joy Gold',family:'Abonament pentru adulți',audience:'18–65 ani',description:'Acoperire extinsă la consultații, investigații și psihoterapie.',route:'cart',kind:'subscription',periods:PERIODS.joy269,visual:'',recommended:true,benefits:['18 consultații sau controale pe an','O ședință de psihoterapie inclusă','Reduceri de până la 70% la investigații','15% reducere la medicii de excelență'],detailsPdf:'joy-gold.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-gold'},
       {id:'joy-platinum',category:'abonamente',subcategory:'adulti',name:'Joy Platinum',family:'Abonament adulți',description:'Abonament de sănătate premium pentru adulți.',route:'cart',kind:'subscription',periods:PERIODS.joy539,visual:'',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/joy-platinum'},
-      {id:'levelup',category:'abonamente',subcategory:'adulti',name:'LevelUp',family:'Abonament individual',audience:'Sănătate și wellbeing',description:'Consultații, analize și prevenție, completate de fitness, psihoterapie și beneficii pentru îngrijirea personală.',route:'cart',kind:'subscription',periods:PERIODS.levelup,visual:'',benefits:['9 consultații sau controale pe an','Set anual de analize inclus','Acces SanoPass la peste 550 de săli','4 ședințe de psihoterapie online'],detailsPdf:'levelup.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/levelup'},
+      {id:'levelup',category:'abonamente',subcategory:'adulti',name:'LevelUp',family:'Abonament individual',audience:'Sănătate și wellbeing',description:'Consultații, analize și prevenție, completate de fitness, psihoterapie și beneficii pentru îngrijirea personală.',route:'cart',kind:'subscription',periods:PERIODS.levelup,visual:'photo-levelup',benefits:['9 consultații sau controale pe an','Set anual de analize inclus','Acces SanoPass la peste 550 de săli','4 ședințe de psihoterapie online'],detailsPdf:'levelup.pdf',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/adulti/levelup'},
       {id:'junior-bronze',category:'abonamente',subcategory:'copii',name:'Joy Junior Bronze',family:'Abonament copii',description:'Abonament medical pentru copii, disponibil pe 3, 6 sau 12 luni.',route:'cart',kind:'subscription',periods:PERIODS.joy139,visual:'child',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/copii/joy-junior-bronze'},
       {id:'junior-silver',category:'abonamente',subcategory:'copii',name:'Joy Junior Silver',family:'Abonament copii',description:'Abonament medical pentru copii, disponibil pe 3, 6 sau 12 luni.',route:'cart',kind:'subscription',periods:PERIODS.joy269,visual:'child',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/copii/joy-junior-silver'},
       {id:'junior-gold',category:'abonamente',subcategory:'copii',name:'Joy Junior Gold',family:'Abonament copii',description:'Abonament medical pentru copii, disponibil pe 3, 6 sau 12 luni.',route:'cart',kind:'subscription',periods:PERIODS.joy539,visual:'child',source:'https://www.hyperclinica.ro/shop/abonamente-de-sanatate/copii/joy-junior-gold'},
@@ -836,14 +837,12 @@
       const plans = {
         'joy-bronze': [{label:'Analize',value:'Set anual inclus'},{label:'Consultații',value:'9 pe an'},{label:'Investigații',value:'30% reducere'},{label:'Extra',value:'Hotline 24/7'}],
         'joy-silver': [{label:'Analize',value:'Set anual inclus'},{label:'Consultații',value:'18 pe an'},{label:'Investigații',value:'50% reducere'},{label:'Extra',value:'7% PharmaLife'}],
-        'joy-gold': [{label:'Analize',value:'Set anual inclus'},{label:'Consultații',value:'18 pe an'},{label:'Investigații',value:'până la 70%'},{label:'Extra',value:'1 ședință de psihoterapie'}]
+        'joy-gold': [{label:'Analize',value:'Set anual inclus'},{label:'Consultații',value:'18 pe an'},{label:'Investigații',value:'până la 70%'},{label:'Extra',value:'1 ședință de psihoterapie'}],
+        'levelup': [{label:'Analize',value:'Set anual inclus'},{label:'Consultații',value:'9 pe an'},{label:'Fitness',value:'550+ săli SanoPass'},{label:'Extra',value:'4 ședințe psihoterapie'}]
       };
       if (plans[product.id]) return plans[product.id];
       if (product.kind === 'subscription') return [
-        {label:'Analize',value:'Conform planului'},
-        {label:'Consultații',value:'Conform planului'},
-        {label:'Investigații',value:'Conform planului'},
-        {label:'Extra',value:product.id==='levelup'?'Wellbeing inclus':product.subcategory==='copii'?'Plan pentru copii':'Nivel premium'}
+        {label:'Acoperire',value:product.subcategory==='copii'?'Plan pentru copii':'Vezi pagina produsului'}
       ];
       return [
         {label:'Pentru',value:product.audience || product.family},
@@ -905,9 +904,10 @@
     function productCard(product) {
       const price = priceInfo(product);
       const duration = productDuration(product);
+      const rows = [...cardComparisonRows(product), {label:'Perioadă',value:duration}];
       return `<article class="product-card">
         <div class="product-visual ${product.visual || ''}">${product.recommended ? '<span class="product-badge">Recomandat</span>' : ''}<span class="product-box" aria-hidden="true"></span><span class="product-family">${product.audience || product.family}</span><h3>${product.name}</h3></div>
-        <div class="product-body"><p>${product.description}</p><ul class="card-benefits">${cardComparisonRows(product).map(item => `<li><span class="benefit-label">${item.label}</span><span class="benefit-value">${item.value}</span></li>`).join('')}</ul><dl class="card-specs"><div><dt>Perioadă</dt><dd>${duration}</dd></div></dl><div class="price"><strong>${price.main}</strong> <span>${price.sub}</span></div><button class="btn btn-secondary card-action" data-action="open-product" data-product="${product.id}">${productCardAction(product)}</button></div>
+        <div class="product-body"><p>${product.description}</p><ul class="card-benefits">${rows.map(item => `<li><span class="benefit-label">${item.label}</span><span class="benefit-value">${item.value}</span></li>`).join('')}</ul><div class="price"><strong>${price.main}</strong> <span>${price.sub}</span></div><button class="btn btn-secondary card-action" data-action="open-product" data-product="${product.id}">${productCardAction(product)}</button></div>
       </article>`;
     }
  
@@ -946,7 +946,7 @@
       return `${breadcrumbs([{label:category.name}])}<section class="category-hero"><div class="container"><h1>${title}</h1><p class="lead">${intro}</p>${category.subcategories.length ? `<div class="filter-row ${category.id}" aria-label="Alege subcategoria">${category.subcategories.map(s => `<button class="chip" aria-pressed="${activeSubcategoryId === s.id}" data-action="open-subcategory" data-subcategory="${s.id}">${s.name}</button>`).join('')}</div>` : ''}</div></section>
       ${category.id==='abonamente'?`<section class="category-usps"><div class="container"><ul class="category-usp-list"><li>${icon('check')} Set anual de analize inclus</li><li>${icon('heart')} Consultații la specialiști</li><li>${icon('activity')} Hotline Medical 24/7</li><li>${icon('location')} Valabil în toată rețeaua</li></ul></div></section>`:''}
       <section class="how-it-works"><div class="container how-grid"><h2>Cum funcționează</h2><div class="how-step"><b>1</b><span>Alegi ${category.id==='pachete'?'pachetul':'planul'}</span></div><div class="how-step"><b>2</b><span>${category.id==='pachete'?'Alegi orașul și unitatea':'Completezi datele'}</span></div><div class="how-step"><b>3</b><span>${category.id==='pachete'?'Programezi serviciile când vrei':'Îți activăm abonamentul'}</span></div></div></section>
-      <section class="section-tight catalog-page"><div class="container"><div class="catalog-meta"><p><strong>${products.length}</strong> ${category.id==='abonamente' ? `planuri pentru ${sub?.id==='copii'?'copii':'adulți'}` : products.length===1?'opțiune':'opțiuni'}</p></div>${products.length ? `<div class="product-grid">${products.map(productCard).join('')}</div>${guide}` : `<div class="empty-state"><h2>Nu sunt produse în această selecție</h2><p>Alege altă subcategorie.</p></div>`}</div></section>`;
+      <section class="section-tight catalog-page"><div class="container"><div class="catalog-meta"><p><strong>${products.length}</strong> ${category.id==='abonamente' ? `planuri pentru ${sub?.id==='copii'?'copii':'adulți'}` : products.length===1?'opțiune':'opțiuni'}</p></div>${products.length ? `<div class="product-grid${category.id === 'abonamente' ? ' product-grid-subscriptions' : ''}">${products.map(productCard).join('')}</div>${guide}` : `<div class="empty-state"><h2>Nu sunt produse în această selecție</h2><p>Alege altă subcategorie.</p></div>`}</div></section>`;
     }
  
     function renderProduct() {
@@ -1117,9 +1117,42 @@
       clearTimeout(model.toastTimer); const region = document.getElementById('toast-region'); region.innerHTML = `<div class="toast">${message}</div>`;
       model.toastTimer = setTimeout(() => region.innerHTML = '', 3200);
     }
-    function route(screen) { model.screen = screen; closeOverlays(); render(); goTop(); requestAnimationFrame(() => { const heading=document.querySelector('#app h1'); if (heading) { heading.tabIndex=-1; heading.focus({preventScroll:true}); } }); }
-    function setProduct(id) {
-      const product = productById(id); model.productId = id; model.categoryId = product.category; model.subcategoryId = product.subcategory; model.periodId = product.periods?.[0]?.id || ''; model.variantId = product.id === 'femei-30' ? 'laborator' : Object.keys(product.variants || {})[0] || ''; model.city=''; model.unit=''; model.errors={}; route('product');
+    function focusMainHeading() { requestAnimationFrame(() => { const heading=document.querySelector('#app h1'); if (heading) { heading.tabIndex=-1; heading.focus({preventScroll:true}); } }); }
+    function route(screen) { model.screen = screen; closeOverlays(); render(); goTop(); syncRoute(); focusMainHeading(); }
+    function applyProductSelection(id) {
+      const product = productById(id); model.productId = id; model.categoryId = product.category; model.subcategoryId = product.subcategory; model.periodId = product.periods?.[0]?.id || ''; model.variantId = product.id === 'femei-30' ? 'laborator' : Object.keys(product.variants || {})[0] || ''; model.city=''; model.unit=''; model.errors={};
+    }
+    function setProduct(id) { applyProductSelection(id); route('product'); }
+ 
+    // --- Rutare pe hash: fiecare ecran are propriul URL (#/produs/joy-bronze etc.), ca refresh și butonul "înapoi" să funcționeze. ---
+    function routePath() {
+      if (model.screen === 'category') return `#/categorie/${model.categoryId || 'abonamente'}${model.subcategoryId ? '/' + model.subcategoryId : ''}`;
+      if (model.screen === 'product') return `#/produs/${model.productId}`;
+      if (model.screen === 'cart') return '#/cos';
+      if (model.screen === 'checkout') return `#/checkout/${model.checkoutStep || 1}`;
+      if (model.screen === 'offer') return '#/oferta';
+      if (model.screen === 'success') return '#/succes';
+      return '#/';
+    }
+    function syncRoute() { const hash = routePath(); if (location.hash !== hash) history.pushState({medlife:true}, '', hash); }
+    function applyRouteFromHash() {
+      let parts;
+      try { parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(part => decodeURIComponent(part)); }
+      catch (e) { model.screen = 'home'; return; }
+      const [head, a, b] = parts;
+      if (head === 'categorie') {
+        const cat = categoryById(a);
+        if (cat) { model.categoryId = cat.id; model.subcategoryId = cat.subcategories.some(s => s.id === b) ? b : (cat.subcategories[0]?.id || null); model.screen = 'category'; return; }
+      }
+      if (head === 'produs' && productById(a)) { applyProductSelection(a); model.screen = 'product'; return; }
+      if (head === 'cos') { model.screen = 'cart'; return; }
+      if (head === 'checkout') {
+        if (!model.cart.length) { model.screen = 'cart'; return; }
+        model.checkoutStep = [1,2,3].includes(Number(a)) ? Number(a) : 1; model.screen = 'checkout'; return;
+      }
+      if (head === 'oferta' && productById(model.productId)?.route === 'offer') { model.screen = 'offer'; return; }
+      if (head === 'succes') { model.screen = 'success'; return; }
+      model.screen = 'home';
     }
     function addToCart(product) {
       const locationNeeded = product.kind === 'one-off' && product.category === 'pachete';
@@ -1177,7 +1210,7 @@
         if (!model.checkoutData.terms) { model.errors.terms='Acceptă contractul și condițiile produsului pentru a continua.'; render(); focusFirstError(); return; }
         model.successKind='order'; route('success'); return;
       }
-      model.errors = {}; model.checkoutStep += 1; render(); goTop();
+      model.errors = {}; model.checkoutStep += 1; render(); goTop(); syncRoute();
       requestAnimationFrame(() => document.querySelector('.checkout-title h1')?.focus?.());
     }
     function submitOffer(form) {
@@ -1220,8 +1253,8 @@
       if (action === 'remove-cart') { model.cart.splice(Number(target.dataset.index),1); render(); }
       if (action === 'apply-promo') { model.promoCode=document.getElementById('promo-code')?.value || ''; showToast(model.promoCode ? 'Codul nu este valabil pentru produsele din coș.' : 'Introdu un cod de reducere.'); }
       if (action === 'checkout') { model.checkoutStep=1; model.errors={}; route('checkout'); }
-      if (action === 'checkout-back') { model.checkoutStep=Math.max(1,model.checkoutStep-1); model.errors={}; render(); goTop(); }
-      if (action === 'edit-contact') { model.checkoutStep=1; model.errors={}; render(); goTop(); }
+      if (action === 'checkout-back') { model.checkoutStep=Math.max(1,model.checkoutStep-1); model.errors={}; render(); goTop(); syncRoute(); }
+      if (action === 'edit-contact') { model.checkoutStep=1; model.errors={}; render(); goTop(); syncRoute(); }
     });
  
     document.addEventListener('submit', event => {
@@ -1261,6 +1294,7 @@
     document.getElementById('search-layer').addEventListener('click', event => { if (event.target.id === 'search-layer') closeOverlayAndRestore(); });
     document.getElementById('cart-sheet').addEventListener('click', event => { if (event.target.id === 'cart-sheet') { model.cartSheet=false; render(); } });
     window.addEventListener('resize', () => requestAnimationFrame(alignBreadcrumb));
+    window.addEventListener('popstate', () => { applyRouteFromHash(); closeOverlays(); render(); goTop(); focusMainHeading(); });
  
     window.medlifeShop = {
       home: () => route('home'),
@@ -1270,6 +1304,9 @@
       reset: () => { model.cart=[]; model.checkoutStep=1; model.beneficiaryType='self'; model.errors={}; route('home'); }
     };
  
+    if (history.scrollRestoration) history.scrollRestoration = 'manual';
+    applyRouteFromHash();
+    history.replaceState({medlife:true}, '', routePath());
     render();
   </script>
 </body>
